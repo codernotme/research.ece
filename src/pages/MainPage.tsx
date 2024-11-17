@@ -1,6 +1,6 @@
 const MainPage = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="min-h-screen">
       <header className="bg-blue-600 text-white py-6 text-center">
         <h1 className="text-3xl font-bold">Welcome to the ECE Department</h1>
         <p className="text-lg">Innovating the future, one circuit at a time</p>

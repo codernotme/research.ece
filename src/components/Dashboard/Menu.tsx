@@ -35,9 +35,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
-
-
-
-// working work done
-//left- to add more menu items
