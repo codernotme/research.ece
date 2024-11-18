@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { BookOpen, FileText, GraduationCap, Library, Menu, X } from "lucide-react";
 import { cn } from "../../lib/utils";
 import { Button } from "../ui/button";
@@ -20,7 +20,6 @@ const menuItems: MenuItem[] = [
 
 export default function DashboardSidebar() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
 
   const toggleSidebar = () => setIsOpen(!isOpen);
 
