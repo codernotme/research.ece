@@ -14,7 +14,6 @@ import type {
   FunctionReference,
 } from "convex/server";
 import type * as auth from "../auth.js";
-import type * as CustomPassword from "../CustomPassword.js";
 import type * as http from "../http.js";
 import type * as journal from "../journal.js";
 
@@ -28,7 +27,6 @@ import type * as journal from "../journal.js";
  */
 declare const fullApi: ApiFromModules<{
   auth: typeof auth;
-  CustomPassword: typeof CustomPassword;
   http: typeof http;
   journal: typeof journal;
 }>;

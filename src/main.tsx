@@ -14,7 +14,7 @@ const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL as string);
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ConvexAuthProvider client={convex}>
-      <main className="min-h-screen w-full">
+      <main className="min-h-screen w-full flex flex-col">
         <Unauthenticated>
           <SignIn />
         </Unauthenticated>

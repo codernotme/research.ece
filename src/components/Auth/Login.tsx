@@ -27,7 +27,7 @@ export function SignIn() {
   };
 
   return (
-    <div className="flex items-center justify-center flex-col min-h-screen p-24">
+    <div className="flex items-center justify-center flex-col min-h-screen p-24 w-full bg-black">
       <div className="login-container p-4">
         <button className="button" data-text="Awesome">
           <span className="actual-text">&nbsp;Research&nbsp;</span>
