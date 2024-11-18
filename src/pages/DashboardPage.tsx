@@ -2,14 +2,14 @@
 import { Routes, Route } from "react-router-dom";
 import JournalForm from "../components/Dashboard/JournalForm";
 import DashboardContent from "../components/Dashboard/DashboardContent";
-import AppSidebar from "../components/Dashboard/Menu";
+import DashboardSidebar from "../components/Dashboard/Menu";
 
 const DashboardPage = () => {
   return (
     <>
       <main className="min-h-screen flex flex-row">
-      <AppSidebar />
-      <div className="w-full mx-auto min-h-screen">
+        <DashboardSidebar />
+        <div className="flex-1">
           <Routes>
             <Route path="/journal-form" element={<JournalForm />} />
             <Route path="/" element={<DashboardContent />} />

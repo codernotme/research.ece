@@ -20,15 +20,18 @@ export default function Navbar() {
             Research-ECE
           </Link>
           <div className="hidden md:flex space-x-4">
-            <NavLink href="/" icon={<HomeIcon className="h-4 w-4 mr-2" />}>
-              Home
-            </NavLink>
-            <NavLink href="/dashboard" icon={<LayoutDashboard className="h-4 w-4 mr-2" />}>
-              Dashboard
-            </NavLink>
-            <NavLink href="/contact" icon={<ContactIcon className="h-4 w-4 mr-2" />}>
-              Contact
-            </NavLink>
+            <Link href="/" className="flex flex-row">
+            <HomeIcon className="h-4 w-4 mr-2" />
+            <span className="sr-only">Home</span>
+            </Link>
+            <Link href="/dashboard"  className="flex flex-row">
+            <LayoutDashboard className="h-4 w-4 mr-2" />
+            <span className="sr-only">Dashboard</span>
+            </Link>
+            <Link href="/contact" className="flex flex-row">
+            <ContactIcon className="h-4 w-4 mr-2" />
+            <span className="sr-only">Contact</span>
+            </Link>
           </div>
         </div>
         <div className="flex items-center space-x-4">
@@ -37,15 +40,6 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-  )
-}
-
-function NavLink({ href, icon, children }: { href: string; icon: React.ReactNode; children: React.ReactNode }) {
-  return (
-    <Link href={href} className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary">
-      {icon}
-      {children}
-    </Link>
   )
 }
 
