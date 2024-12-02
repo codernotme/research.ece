@@ -2,30 +2,29 @@
 
 import { useState, useEffect } from "react";
 import { CalendarIcon } from "lucide-react";
-import { cn } from "../../lib/utils";
+import { cn } from "../lib/utils";
 import { format } from "date-fns";
-import { Button } from "../ui/button";
+import { Button } from "../components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "../ui/card";
-import { Input } from "../ui/input";
+} from "../components/ui/card";
+import { Input } from "../components/ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../ui/select";
-import { Label } from "../ui/label";
-import { Calendar } from "../ui/calendar";
-import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+} from "../components/ui/select";
+import { Label } from "../components/ui/label";
+import { Calendar } from "../components/ui/calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "../components/ui/popover";
 import { useMutation } from "convex/react";
-import { api } from "../../../convex/_generated/api";
-
+import { api } from "../../convex/_generated/api";
 export default function Component() {
   const [date, setDate] = useState<Date>();
   const saveJournal = useMutation(api.journal.create);

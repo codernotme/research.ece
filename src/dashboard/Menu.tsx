@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { BookOpen, FileText, GraduationCap, Library, Menu, X } from "lucide-react";
-import { cn } from "../../lib/utils";
-import { Button } from "../ui/button";
+import { Button } from "../components/ui/button";
+import { cn } from "../lib/utils";
 
 type MenuItem = {
   name: string;

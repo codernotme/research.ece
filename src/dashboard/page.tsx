@@ -1,8 +1,8 @@
 "use client";
 import { Routes, Route } from "react-router-dom";
-import JournalForm from "../components/Dashboard/JournalForm";
-import DashboardContent from "../components/Dashboard/DashboardContent";
-import DashboardSidebar from "../components/Dashboard/Menu";
+import JournalForm from "./JournalForm";
+import DashboardContent from "./DashboardContent";
+import DashboardSidebar from "./Menu";
 
 const DashboardPage = () => {
   return (
