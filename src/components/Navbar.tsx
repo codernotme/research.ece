@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { Link } from "@nextui-org/link"
-import { ContactIcon, HomeIcon, LayoutDashboard, Menu } from "lucide-react"
-import { Button } from "./ui/button"
+import { Link } from "@nextui-org/link";
+import { ContactIcon, HomeIcon, LayoutDashboard, Menu } from "lucide-react";
+import { Button } from "./ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "./ui/dropdown-menu"
-import  SignOutButton  from "./Auth/SignOut"
+} from "./ui/dropdown-menu";
+import SignOutButton from "../auth/SignOut";
 
 export default function Navbar() {
   return (
@@ -21,16 +21,16 @@ export default function Navbar() {
           </Link>
           <div className="hidden md:flex space-x-4">
             <Link href="/" className="flex flex-row">
-            <HomeIcon className="h-4 w-4 mr-2" />
-            <span className="sr-only">Home</span>
+              <HomeIcon className="h-4 w-4 mr-2" />
+              <span className="sr-only">Home</span>
             </Link>
-            <Link href="/dashboard"  className="flex flex-row">
-            <LayoutDashboard className="h-4 w-4 mr-2" />
-            <span className="sr-only">Dashboard</span>
+            <Link href="/dashboard" className="flex flex-row">
+              <LayoutDashboard className="h-4 w-4 mr-2" />
+              <span className="sr-only">Dashboard</span>
             </Link>
             <Link href="/contact" className="flex flex-row">
-            <ContactIcon className="h-4 w-4 mr-2" />
-            <span className="sr-only">Contact</span>
+              <ContactIcon className="h-4 w-4 mr-2" />
+              <span className="sr-only">Contact</span>
             </Link>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
 function MobileMenu() {
@@ -73,5 +73,5 @@ function MobileMenu() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

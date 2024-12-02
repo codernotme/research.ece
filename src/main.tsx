@@ -6,7 +6,7 @@ import { ConvexReactClient } from "convex/react";
 import App from "./App.tsx";
 import "./index.css";
 import { Unauthenticated, Authenticated } from "convex/react";
-import { SignIn } from "./components/Auth/Login.tsx";
+import { SignIn } from "./auth/Login.tsx";
 import Navbar from "./components/Navbar.tsx";
 
 const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL as string);

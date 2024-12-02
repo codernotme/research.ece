@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from "react";
 import { useAuthActions } from "@convex-dev/auth/react";
-import { Button } from "../ui/button";
+import { Button } from "../components/ui/button";
 import {
   Card,
   CardContent,
@@ -10,11 +10,11 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../ui/card";
-import { Input } from "../ui/input";
-import { Label } from "../ui/label";
+} from "../components/ui/card";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
 
-import "../../css/login.css";
+import "../css/login.css";
 
 export function SignIn() {
   const { signIn } = useAuthActions();
@@ -57,7 +57,7 @@ export function SignIn() {
                 <Input
                   id="email"
                   name="email"
-                  placeholder="m@example.com"
+                  placeholder="mail@example.com"
                   required
                   type="email"
                 />
